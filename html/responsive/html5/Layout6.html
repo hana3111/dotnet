@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout6</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        body {background-color: #fffde7;}
+        #wrap {width: 1200px; margin: 0 auto;}
+        header {width: 100%; height: 100px; background-color: #ffe082;}
+        nav {width: 100%; height: 300px;background-color: #ffd54f;}
+        section {overflow: hidden; padding: 5%; width: 90%; background-color: #ffca28;}
+        section > div {float: left; width: 18%; margin: 1%;text-align: center; line-height: 170px; height: 170px; background-color: #ff9890; border-radius: 5px;}
+        footer {width: 100%; height: 100px; background-color: #ffb300;}
+
+        @media (max-width: 1220px) {
+            #wrap {width: 100%;}
+            section > div {width: 23%;}
+            section > div:nth-child(5n) {display: none;}
+        }
+        @media (max-width: 768px) {
+            section > div {width: 31.33333%;}
+            section > div:nth-child(5) {display: block;}
+        }
+        @media (max-width: 600px) {
+            section > div {width: 48%;}
+            section > div:nth-child(5n) {display: block;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <nav></nav>
+        <section>
+            <div>11111</div>
+            <div>22222</div>
+            <div>33333</div>
+            <div>44444</div>
+            <div>55555</div>
+            <div>66666</div>
+            <div>77777</div>
+            <div>88888</div>
+            <div>99999</div>
+            <div>aaaaa</div>
+        </section>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>
